@@ -1,0 +1,135 @@
+package junitTestDAO;
+
+import com.polypro.helper.JdbcHelper;
+import com.polypro.dao.HocVienDAO;
+import com.polypro.model.HocVien;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hamcrest.CoreMatchers;
+import org.junit.Assert;
+import org.junit.runner.RunWith;
+import org.mockito.ArgumentMatchers;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+@RunWith(PowerMockRunner.class)
+@PrepareForTest({ HocVienDAO.class, JdbcHelper.class })
+public class HocVienDAOTest{
+	
+	HocVienDAO dao;
+	HocVienDAO daoSpy;
+	
+	@Before
+	public void beforeMethod() {
+		dao = new HocVienDAO();
+		PowerMockito.mockStatic(JdbcHelper.class);
+		daoSpy = PowerMockito.spy(new HocVienDAO());
+	}
+	
+	@After
+	public void afterMethod() {
+		dao = null;
+		daoSpy = null;
+	}
+
+	@Test(expected = Exception.class)
+	public void deleteWithMaHvNegativeTest() {
+		int maCd = -1;
+		dao.delete(maCd);
+	}
+
+	@Test
+	public void deleteWithMaKhValidTest() {
+		int maCd = 10;
+		dao.delete(maCd);
+	}
+
+	@Test(expected = Exception.class)
+	public void insertWithNullModelTest() {
+		HocVien model = null;
+		dao.insert(model);
+	}
+
+	@Test(expected = Exception.class)
+	public void insertWithEmptyModelTest() {
+		HocVien model = new HocVien();
+		dao.insert(model);
+	}
+
+	@Test
+	public void insertWithValidModelTest() {
+		HocVien model = new HocVien();
+		model.setDiem(10);
+		model.setMaHV(20);
+		model.setMaKH(1);
+		model.setMaNH("NH001");
+		dao.insert(model);
+	}
+
+	@Test
+	public void selectTest() throws Exception{
+			List<HocVien> expecteds = new ArrayList<>();
+			PowerMockito.doReturn(expecteds).when(daoSpy, "select", ArgumentMatchers.anyString(),
+					ArgumentMatchers.any());
+			List<HocVien> actuals = daoSpy.select1();
+
+			Assert.assertEquals(expecteds, actuals);
+	}
+
+	@Test(expected = Exception.class)
+	public void updateWithNullModelTest() {
+		HocVien model = null;
+		dao.update(model);
+	}
+
+	@Test(expected = Exception.class)
+	public void updateWithEmptyModelTest() {
+		HocVien model = new HocVien();
+		dao.update(model);
+	}
+
+	@Test
+	public void updateWithValidModelTest() {
+		HocVien model = new HocVien();
+		model.setDiem(10);
+		model.setMaHV(20);
+		model.setMaKH(1);
+		model.setMaNH("NH001");
+		dao.insert(model);
+	}
+
+	@Test
+	public void findByIdWithValidModelTest() throws Exception{
+			int maHV = 20;
+			
+			HocVien  expResuilt = null;
+			List<HocVien> resuiltList = new ArrayList<>();
+			resuiltList.add(expResuilt);
+			PowerMockito.doReturn(resuiltList).when(daoSpy,"select", ArgumentMatchers.anyString(),
+					ArgumentMatchers.any());
+			HocVien resuilt = daoSpy.findById(maHV);
+			Assert.assertThat(resuilt, CoreMatchers.is(expResuilt));	
+	}
+	
+	@Test
+	public void findByIdWithNotFoundTest() throws Exception{
+			int maHV = 123;
+
+			HocVien expected = null;
+			List<HocVien> resultList = new ArrayList<>();
+
+			PowerMockito.doReturn(resultList).when(daoSpy, "select",
+					ArgumentMatchers.anyString(),
+					ArgumentMatchers.any());
+
+			HocVien result = daoSpy.findById(maHV);
+
+			Assert.assertThat(result, CoreMatchers.is(expected));
+	}
+}

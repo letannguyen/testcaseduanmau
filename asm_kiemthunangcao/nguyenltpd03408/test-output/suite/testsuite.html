@@ -1,0 +1,2756 @@
+<html>
+<head>
+<title>TestNG:  testsuite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>testsuite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>119/47/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 30 14:54:08 GMT+07:00 2020</td>
+</tr>
+<tr><td>Total time:</td><td>9 seconds (9834 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testDAO.ChuyenDeDAOTest.deleteWithMaCdNullTest()'><b>deleteWithMaCdNullTest</b><br>Test class: testDAO.ChuyenDeDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method ChuyenDeDAOTest.deleteWithMaCdNullTest()[pri:0, instance:testDAO.ChuyenDeDAOTest@65ae095c] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1128198660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1128198660'><pre>org.testng.TestException: 
+Method ChuyenDeDAOTest.deleteWithMaCdNullTest()[pri:0, instance:testDAO.ChuyenDeDAOTest@65ae095c] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.ChuyenDeDAOTest@65ae095c</td></tr>
+<tr>
+<td title='testDAO.NhanVienDAOTest.deleteWithMaCdNullTest()'><b>deleteWithMaCdNullTest</b><br>Test class: testDAO.NhanVienDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NhanVienDAOTest.deleteWithMaCdNullTest()[pri:0, instance:testDAO.NhanVienDAOTest@5cd61783] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace446496095", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace446496095'><pre>org.testng.TestException: 
+Method NhanVienDAOTest.deleteWithMaCdNullTest()[pri:0, instance:testDAO.NhanVienDAOTest@5cd61783] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.NhanVienDAOTest@5cd61783</td></tr>
+<tr>
+<td title='testDAO.HocVienDAOTest.deleteWithMaHvNegativeTest()'><b>deleteWithMaHvNegativeTest</b><br>Test class: testDAO.HocVienDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method HocVienDAOTest.deleteWithMaHvNegativeTest()[pri:0, instance:testDAO.HocVienDAOTest@2e140e59] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1059749024", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1059749024'><pre>org.testng.TestException: 
+Method HocVienDAOTest.deleteWithMaHvNegativeTest()[pri:0, instance:testDAO.HocVienDAOTest@2e140e59] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.HocVienDAOTest@2e140e59</td></tr>
+<tr>
+<td title='testDAO.KhoaHocDAOTest.deleteWithMaKhNullTest()'><b>deleteWithMaKhNullTest</b><br>Test class: testDAO.KhoaHocDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method KhoaHocDAOTest.deleteWithMaKhNullTest()[pri:0, instance:testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace332151172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace332151172'><pre>org.testng.TestException: 
+Method KhoaHocDAOTest.deleteWithMaKhNullTest()[pri:0, instance:testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.deleteWithMaNhNullTest()'><b>deleteWithMaNhNullTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NguoiHocDAOTest.deleteWithMaNhNullTest()[pri:0, instance:testDAO.NguoiHocDAOTest@49a71302] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace920119506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace920119506'><pre>org.testng.TestException: 
+Method NguoiHocDAOTest.deleteWithMaNhNullTest()[pri:0, instance:testDAO.NguoiHocDAOTest@49a71302] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.ThongKeDAOTest.getBangDiemMultipleDataTest()'><b>getBangDiemMultipleDataTest</b><br>Test class: testDAO.ThongKeDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.ThongKeDAO.getBangDiem(ThongKeDAO.java:67)
+	at testDAO.ThongKeDAOTest.getBangDiemMultipleDataTest(ThongKeDAOTest.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409402536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409402536'><pre>java.lang.NullPointerException
+	at com.polypro.dao.ThongKeDAO.getBangDiem(ThongKeDAO.java:67)
+	at testDAO.ThongKeDAOTest.getBangDiemMultipleDataTest(ThongKeDAOTest.java:89)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.ThongKeDAOTest@59429fac</td></tr>
+<tr>
+<td title='testDAO.ThongKeDAOTest.getBangDiemTest()'><b>getBangDiemTest</b><br>Test class: testDAO.ThongKeDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.ThongKeDAO.getBangDiem(ThongKeDAO.java:67)
+	at testDAO.ThongKeDAOTest.getBangDiemTest(ThongKeDAOTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1659475032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1659475032'><pre>java.lang.NullPointerException
+	at com.polypro.dao.ThongKeDAO.getBangDiem(ThongKeDAO.java:67)
+	at testDAO.ThongKeDAOTest.getBangDiemTest(ThongKeDAOTest.java:70)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.ThongKeDAOTest@59429fac</td></tr>
+<tr>
+<td title='testDAO.ChuyenDeDAOTest.insertWithEmptyModelTest()'><b>insertWithEmptyModelTest</b><br>Test class: testDAO.ChuyenDeDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method ChuyenDeDAOTest.insertWithEmptyModelTest()[pri:0, instance:testDAO.ChuyenDeDAOTest@65ae095c] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1924318701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1924318701'><pre>org.testng.TestException: 
+Method ChuyenDeDAOTest.insertWithEmptyModelTest()[pri:0, instance:testDAO.ChuyenDeDAOTest@65ae095c] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.ChuyenDeDAOTest@65ae095c</td></tr>
+<tr>
+<td title='testDAO.HocVienDAOTest.insertWithEmptyModelTest()'><b>insertWithEmptyModelTest</b><br>Test class: testDAO.HocVienDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method HocVienDAOTest.insertWithEmptyModelTest()[pri:0, instance:testDAO.HocVienDAOTest@2e140e59] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1963663371", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1963663371'><pre>org.testng.TestException: 
+Method HocVienDAOTest.insertWithEmptyModelTest()[pri:0, instance:testDAO.HocVienDAOTest@2e140e59] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.HocVienDAOTest@2e140e59</td></tr>
+<tr>
+<td title='testDAO.KhoaHocDAOTest.insertWithEmptyModelTest()'><b>insertWithEmptyModelTest</b><br>Test class: testDAO.KhoaHocDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method KhoaHocDAOTest.insertWithEmptyModelTest()[pri:0, instance:testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2132487943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2132487943'><pre>org.testng.TestException: 
+Method KhoaHocDAOTest.insertWithEmptyModelTest()[pri:0, instance:testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.insertWithEmptyModelTest()'><b>insertWithEmptyModelTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NguoiHocDAOTest.insertWithEmptyModelTest()[pri:0, instance:testDAO.NguoiHocDAOTest@49a71302] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2017703518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2017703518'><pre>org.testng.TestException: 
+Method NguoiHocDAOTest.insertWithEmptyModelTest()[pri:0, instance:testDAO.NguoiHocDAOTest@49a71302] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NhanVienDAOTest.insertWithEmptyModelTest()'><b>insertWithEmptyModelTest</b><br>Test class: testDAO.NhanVienDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NhanVienDAOTest.insertWithEmptyModelTest()[pri:0, instance:testDAO.NhanVienDAOTest@5cd61783] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace407577812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace407577812'><pre>org.testng.TestException: 
+Method NhanVienDAOTest.insertWithEmptyModelTest()[pri:0, instance:testDAO.NhanVienDAOTest@5cd61783] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.NhanVienDAOTest@5cd61783</td></tr>
+<tr>
+<td title='testModel.HocVienTest.setDiemNegativeTest()'><b>setDiemNegativeTest</b><br>Test class: testModel.HocVienTest</td>
+<td><div><pre>org.testng.TestException: 
+Method HocVienTest.setDiemNegativeTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace760378182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace760378182'><pre>org.testng.TestException: 
+Method HocVienTest.setDiemNegativeTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.HocVienTest.setDiemZeroTest()'><b>setDiemZeroTest</b><br>Test class: testModel.HocVienTest</td>
+<td><div><pre>org.testng.TestException: 
+Method HocVienTest.setDiemZeroTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1104950472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1104950472'><pre>org.testng.TestException: 
+Method HocVienTest.setDiemZeroTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setDienThoaiNullTest()'><b>setDienThoaiNullTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NguoiHocTest.setDienThoaiNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1595866994", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1595866994'><pre>org.testng.TestException: 
+Method NguoiHocTest.setDienThoaiNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setEmailNullTest()'><b>setEmailNullTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NguoiHocTest.setEmailNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1904553846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1904553846'><pre>org.testng.TestException: 
+Method NguoiHocTest.setEmailNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setHinhNullTest()'><b>setHinhNullTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td><div><pre>org.testng.TestException: 
+Method ChuyenDeTest.setHinhNullTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace914903833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace914903833'><pre>org.testng.TestException: 
+Method ChuyenDeTest.setHinhNullTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setHoTenNullTest()'><b>setHoTenNullTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NguoiHocTest.setHoTenNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1888428943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1888428943'><pre>org.testng.TestException: 
+Method NguoiHocTest.setHoTenNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.setHoTenNullTest()'><b>setHoTenNullTest</b><br>Test class: testModel.NhanVienTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NhanVienTest.setHoTenNullTest()[pri:0, instance:testModel.NhanVienTest@19ccca5] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1795860311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1795860311'><pre>org.testng.TestException: 
+Method NhanVienTest.setHoTenNullTest()[pri:0, instance:testModel.NhanVienTest@19ccca5] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setHocPhiNegativeTest()'><b>setHocPhiNegativeTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td><div><pre>org.testng.TestException: 
+Method ChuyenDeTest.setHocPhiNegativeTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace527331152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace527331152'><pre>org.testng.TestException: 
+Method ChuyenDeTest.setHocPhiNegativeTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setHocPhiNegativeTest()'><b>setHocPhiNegativeTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method KhoaHocTest.setHocPhiNegativeTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1348009723", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1348009723'><pre>org.testng.TestException: 
+Method KhoaHocTest.setHocPhiNegativeTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setHocPhiZeroTest()'><b>setHocPhiZeroTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td><div><pre>org.testng.TestException: 
+Method ChuyenDeTest.setHocPhiZeroTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace475871084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace475871084'><pre>org.testng.TestException: 
+Method ChuyenDeTest.setHocPhiZeroTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setHocPhiZeroTest()'><b>setHocPhiZeroTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method KhoaHocTest.setHocPhiZeroTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2052572633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2052572633'><pre>org.testng.TestException: 
+Method KhoaHocTest.setHocPhiZeroTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setMaCDNullTest()'><b>setMaCDNullTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td><div><pre>org.testng.TestException: 
+Method ChuyenDeTest.setMaCDNullTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace340640503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace340640503'><pre>org.testng.TestException: 
+Method ChuyenDeTest.setMaCDNullTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setMaCDNullTest()'><b>setMaCDNullTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method KhoaHocTest.setMaCDNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace451480761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace451480761'><pre>org.testng.TestException: 
+Method KhoaHocTest.setMaCDNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.HocVienTest.setMaHVNegativeTest()'><b>setMaHVNegativeTest</b><br>Test class: testModel.HocVienTest</td>
+<td><div><pre>org.testng.TestException: 
+Method HocVienTest.setMaHVNegativeTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace528776606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace528776606'><pre>org.testng.TestException: 
+Method HocVienTest.setMaHVNegativeTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.HocVienTest.setMaHVZeroTest()'><b>setMaHVZeroTest</b><br>Test class: testModel.HocVienTest</td>
+<td><div><pre>org.testng.TestException: 
+Method HocVienTest.setMaHVZeroTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1181534785", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1181534785'><pre>org.testng.TestException: 
+Method HocVienTest.setMaHVZeroTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.HocVienTest.setMaKHNullTest()'><b>setMaKHNullTest</b><br>Test class: testModel.HocVienTest</td>
+<td><div><pre>org.testng.TestException: 
+Method HocVienTest.setMaKHNullTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace378787077", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace378787077'><pre>org.testng.TestException: 
+Method HocVienTest.setMaKHNullTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setMaKHNullTest()'><b>setMaKHNullTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method KhoaHocTest.setMaKHNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1227700386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1227700386'><pre>org.testng.TestException: 
+Method KhoaHocTest.setMaKHNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.HocVienTest.setMaNHNullTest()'><b>setMaNHNullTest</b><br>Test class: testModel.HocVienTest</td>
+<td><div><pre>org.testng.TestException: 
+Method HocVienTest.setMaNHNullTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace797657283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace797657283'><pre>org.testng.TestException: 
+Method HocVienTest.setMaNHNullTest()[pri:0, instance:testModel.HocVienTest@26e412ef] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setMaNHNullTest()'><b>setMaNHNullTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NguoiHocTest.setMaNHNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1779255272", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1779255272'><pre>org.testng.TestException: 
+Method NguoiHocTest.setMaNHNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setMaNVNullTest()'><b>setMaNVNullTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method KhoaHocTest.setMaNVNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace911673654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace911673654'><pre>org.testng.TestException: 
+Method KhoaHocTest.setMaNVNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setMaNVNullTest()'><b>setMaNVNullTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NguoiHocTest.setMaNVNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace543835743", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace543835743'><pre>org.testng.TestException: 
+Method NguoiHocTest.setMaNVNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.setMaNVNullTest()'><b>setMaNVNullTest</b><br>Test class: testModel.NhanVienTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NhanVienTest.setMaNVNullTest()[pri:0, instance:testModel.NhanVienTest@19ccca5] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1269406647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1269406647'><pre>org.testng.TestException: 
+Method NhanVienTest.setMaNVNullTest()[pri:0, instance:testModel.NhanVienTest@19ccca5] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.setMatKhauNullTest()'><b>setMatKhauNullTest</b><br>Test class: testModel.NhanVienTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NhanVienTest.setMatKhauNullTest()[pri:0, instance:testModel.NhanVienTest@19ccca5] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1370583853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1370583853'><pre>org.testng.TestException: 
+Method NhanVienTest.setMatKhauNullTest()[pri:0, instance:testModel.NhanVienTest@19ccca5] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setNgayDKNullTest()'><b>setNgayDKNullTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NguoiHocTest.setNgayDKNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace905962412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace905962412'><pre>org.testng.TestException: 
+Method NguoiHocTest.setNgayDKNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setNgayKGNullTest()'><b>setNgayKGNullTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method KhoaHocTest.setNgayKGNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1270490884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1270490884'><pre>org.testng.TestException: 
+Method KhoaHocTest.setNgayKGNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setNgaySinhNullTest()'><b>setNgaySinhNullTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NguoiHocTest.setNgaySinhNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace228732988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace228732988'><pre>org.testng.TestException: 
+Method NguoiHocTest.setNgaySinhNullTest()[pri:0, instance:testModel.NguoiHocTest@7103ab0] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setNgayTaoNullTest()'><b>setNgayTaoNullTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method KhoaHocTest.setNgayTaoNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1039486933", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1039486933'><pre>org.testng.TestException: 
+Method KhoaHocTest.setNgayTaoNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setTenCDNullTest()'><b>setTenCDNullTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td><div><pre>org.testng.TestException: 
+Method ChuyenDeTest.setTenCDNullTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace888005223", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace888005223'><pre>org.testng.TestException: 
+Method ChuyenDeTest.setTenCDNullTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setThoiLuongNullTest()'><b>setThoiLuongNullTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td><div><pre>org.testng.TestException: 
+Method ChuyenDeTest.setThoiLuongNullTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace386090072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace386090072'><pre>org.testng.TestException: 
+Method ChuyenDeTest.setThoiLuongNullTest()[pri:0, instance:testModel.ChuyenDeTest@57aa341b] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setThoiLuongNullTest()'><b>setThoiLuongNullTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td><div><pre>org.testng.TestException: 
+Method KhoaHocTest.setThoiLuongNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1216070398", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1216070398'><pre>org.testng.TestException: 
+Method KhoaHocTest.setThoiLuongNullTest()[pri:0, instance:testModel.KhoaHocTest@4ae263bf] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testDAO.ChuyenDeDAOTest.updateWithEmptyModelTest()'><b>updateWithEmptyModelTest</b><br>Test class: testDAO.ChuyenDeDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method ChuyenDeDAOTest.updateWithEmptyModelTest()[pri:0, instance:testDAO.ChuyenDeDAOTest@65ae095c] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace902348321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace902348321'><pre>org.testng.TestException: 
+Method ChuyenDeDAOTest.updateWithEmptyModelTest()[pri:0, instance:testDAO.ChuyenDeDAOTest@65ae095c] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.ChuyenDeDAOTest@65ae095c</td></tr>
+<tr>
+<td title='testDAO.HocVienDAOTest.updateWithEmptyModelTest()'><b>updateWithEmptyModelTest</b><br>Test class: testDAO.HocVienDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method HocVienDAOTest.updateWithEmptyModelTest()[pri:0, instance:testDAO.HocVienDAOTest@2e140e59] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1343957354", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1343957354'><pre>org.testng.TestException: 
+Method HocVienDAOTest.updateWithEmptyModelTest()[pri:0, instance:testDAO.HocVienDAOTest@2e140e59] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.HocVienDAOTest@2e140e59</td></tr>
+<tr>
+<td title='testDAO.KhoaHocDAOTest.updateWithEmptyModelTest()'><b>updateWithEmptyModelTest</b><br>Test class: testDAO.KhoaHocDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method KhoaHocDAOTest.updateWithEmptyModelTest()[pri:0, instance:testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1416013849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1416013849'><pre>org.testng.TestException: 
+Method KhoaHocDAOTest.updateWithEmptyModelTest()[pri:0, instance:testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.updateWithEmptyModelTest()'><b>updateWithEmptyModelTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NguoiHocDAOTest.updateWithEmptyModelTest()[pri:0, instance:testDAO.NguoiHocDAOTest@49a71302] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15848947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15848947'><pre>org.testng.TestException: 
+Method NguoiHocDAOTest.updateWithEmptyModelTest()[pri:0, instance:testDAO.NguoiHocDAOTest@49a71302] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NhanVienDAOTest.updateWithEmptyModelTest()'><b>updateWithEmptyModelTest</b><br>Test class: testDAO.NhanVienDAOTest</td>
+<td><div><pre>org.testng.TestException: 
+Method NhanVienDAOTest.updateWithEmptyModelTest()[pri:0, instance:testDAO.NhanVienDAOTest@5cd61783] should have thrown an exception of type class java.lang.Exception
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace574509540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace574509540'><pre>org.testng.TestException: 
+Method NhanVienDAOTest.updateWithEmptyModelTest()[pri:0, instance:testDAO.NhanVienDAOTest@5cd61783] should have thrown an exception of type class java.lang.Exception
+	at org.testng.internal.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:82)
+	at org.testng.internal.TestInvoker.considerExceptions(TestInvoker.java:741)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:629)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.NhanVienDAOTest@5cd61783</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testDAO.ChuyenDeDAOTest.deleteWithMaKhValidTest()'><b>deleteWithMaKhValidTest</b><br>Test class: testDAO.ChuyenDeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ChuyenDeDAOTest@65ae095c</td></tr>
+<tr>
+<td title='testDAO.HocVienDAOTest.deleteWithMaKhValidTest()'><b>deleteWithMaKhValidTest</b><br>Test class: testDAO.HocVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.HocVienDAOTest@2e140e59</td></tr>
+<tr>
+<td title='testDAO.KhoaHocDAOTest.deleteWithMaKhValidTest()'><b>deleteWithMaKhValidTest</b><br>Test class: testDAO.KhoaHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37</td></tr>
+<tr>
+<td title='testDAO.NhanVienDAOTest.deleteWithMaKhValidTest()'><b>deleteWithMaKhValidTest</b><br>Test class: testDAO.NhanVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NhanVienDAOTest@5cd61783</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.deleteWithMaNhValidTest()'><b>deleteWithMaNhValidTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.KhoaHocDAOTest.findByIdWithNontFoundTest()'><b>findByIdWithNontFoundTest</b><br>Test class: testDAO.KhoaHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37</td></tr>
+<tr>
+<td title='testDAO.ChuyenDeDAOTest.findByIdWithNotFoundTest()'><b>findByIdWithNotFoundTest</b><br>Test class: testDAO.ChuyenDeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ChuyenDeDAOTest@65ae095c</td></tr>
+<tr>
+<td title='testDAO.HocVienDAOTest.findByIdWithNotFoundTest()'><b>findByIdWithNotFoundTest</b><br>Test class: testDAO.HocVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.HocVienDAOTest@2e140e59</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.findByIdWithNotFoundTest()'><b>findByIdWithNotFoundTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NhanVienDAOTest.findByIdWithNotFoundTest()'><b>findByIdWithNotFoundTest</b><br>Test class: testDAO.NhanVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NhanVienDAOTest@5cd61783</td></tr>
+<tr>
+<td title='testDAO.ChuyenDeDAOTest.findByIdWithValidModelTest()'><b>findByIdWithValidModelTest</b><br>Test class: testDAO.ChuyenDeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ChuyenDeDAOTest@65ae095c</td></tr>
+<tr>
+<td title='testDAO.HocVienDAOTest.findByIdWithValidModelTest()'><b>findByIdWithValidModelTest</b><br>Test class: testDAO.HocVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.HocVienDAOTest@2e140e59</td></tr>
+<tr>
+<td title='testDAO.KhoaHocDAOTest.findByIdWithValidModelTest()'><b>findByIdWithValidModelTest</b><br>Test class: testDAO.KhoaHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.findByIdWithValidModelTest()'><b>findByIdWithValidModelTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NhanVienDAOTest.findByIdWithValidModelTest()'><b>findByIdWithValidModelTest</b><br>Test class: testDAO.NhanVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NhanVienDAOTest@5cd61783</td></tr>
+<tr>
+<td title='testModel.HocVienTest.getDiemTest()'><b>getDiemTest</b><br>Test class: testModel.HocVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testDAO.ThongKeDAOTest.getDiemTheoChuyenDeTest()'><b>getDiemTheoChuyenDeTest</b><br>Test class: testDAO.ThongKeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ThongKeDAOTest@59429fac</td></tr>
+<tr>
+<td title='testDAO.ThongKeDAOTest.getDiemTheoChuyenDeWithMultipleDataTest()'><b>getDiemTheoChuyenDeWithMultipleDataTest</b><br>Test class: testDAO.ThongKeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ThongKeDAOTest@59429fac</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.getDienThoaiTest()'><b>getDienThoaiTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testDAO.ThongKeDAOTest.getDoanhThuTest()'><b>getDoanhThuTest</b><br>Test class: testDAO.ThongKeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ThongKeDAOTest@59429fac</td></tr>
+<tr>
+<td title='testDAO.ThongKeDAOTest.getDoanhThuWithMultipleDataTest()'><b>getDoanhThuWithMultipleDataTest</b><br>Test class: testDAO.ThongKeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ThongKeDAOTest@59429fac</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.getEmailTest()'><b>getEmailTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.getGhiChuTest()'><b>getGhiChuTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.getGhiChuTest()'><b>getGhiChuTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.getGioiTinhTest()'><b>getGioiTinhTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.getHinhTest()'><b>getHinhTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.getHoTenTest()'><b>getHoTenTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.getHoTenTest()'><b>getHoTenTest</b><br>Test class: testModel.NhanVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.getHocPhiTest()'><b>getHocPhiTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.getHocPhiTest()'><b>getHocPhiTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.getMaCDTest()'><b>getMaCDTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.getMaCDTest()'><b>getMaCDTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.HocVienTest.getMaHVTest()'><b>getMaHVTest</b><br>Test class: testModel.HocVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.HocVienTest.getMaKHTest()'><b>getMaKHTest</b><br>Test class: testModel.HocVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.getMaKHTest()'><b>getMaKHTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.HocVienTest.getMaNHTest()'><b>getMaNHTest</b><br>Test class: testModel.HocVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.getMaNHTest()'><b>getMaNHTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.getMaNVTest()'><b>getMaNVTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.getMaNVTest()'><b>getMaNVTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.getMaNVTest()'><b>getMaNVTest</b><br>Test class: testModel.NhanVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.getMatKhauTest()'><b>getMatKhauTest</b><br>Test class: testModel.NhanVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.getMoTaTest()'><b>getMoTaTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.getNgayDKTest()'><b>getNgayDKTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.getNgayKGTest()'><b>getNgayKGTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.getNgaySinhTest()'><b>getNgaySinhTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.getNgayTaoTest()'><b>getNgayTaoTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testDAO.ThongKeDAOTest.getNguoiHocTest()'><b>getNguoiHocTest</b><br>Test class: testDAO.ThongKeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ThongKeDAOTest@59429fac</td></tr>
+<tr>
+<td title='testDAO.ThongKeDAOTest.getNguoiHocWithMultipleDataTest()'><b>getNguoiHocWithMultipleDataTest</b><br>Test class: testDAO.ThongKeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ThongKeDAOTest@59429fac</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.getTenCDTest()'><b>getTenCDTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.getThoiLuongTest()'><b>getThoiLuongTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.getThoiLuongTest()'><b>getThoiLuongTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.getVaiTroTest()'><b>getVaiTroTest</b><br>Test class: testModel.NhanVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testDAO.ChuyenDeDAOTest.insertWithNullModelTest()'><b>insertWithNullModelTest</b><br>Test class: testDAO.ChuyenDeDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.ChuyenDeDAO.insert(ChuyenDeDAO.java:13)
+	at testDAO.ChuyenDeDAOTest.insertWithNullModelTest(ChuyenDeDAOTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1057808593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1057808593'><pre>java.lang.NullPointerException
+	at com.polypro.dao.ChuyenDeDAO.insert(ChuyenDeDAO.java:13)
+	at testDAO.ChuyenDeDAOTest.insertWithNullModelTest(ChuyenDeDAOTest.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.ChuyenDeDAOTest@65ae095c</td></tr>
+<tr>
+<td title='testDAO.HocVienDAOTest.insertWithNullModelTest()'><b>insertWithNullModelTest</b><br>Test class: testDAO.HocVienDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.HocVienDAO.insert(HocVienDAO.java:24)
+	at testDAO.HocVienDAOTest.insertWithNullModelTest(HocVienDAOTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1924594328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1924594328'><pre>java.lang.NullPointerException
+	at com.polypro.dao.HocVienDAO.insert(HocVienDAO.java:24)
+	at testDAO.HocVienDAOTest.insertWithNullModelTest(HocVienDAOTest.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.HocVienDAOTest@2e140e59</td></tr>
+<tr>
+<td title='testDAO.KhoaHocDAOTest.insertWithNullModelTest()'><b>insertWithNullModelTest</b><br>Test class: testDAO.KhoaHocDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.KhoaHocDAO.insert(KhoaHocDAO.java:15)
+	at testDAO.KhoaHocDAOTest.insertWithNullModelTest(KhoaHocDAOTest.java:75)
+	at testDAO.KhoaHocDAOTest_$$_jvstd96_0._d15insertWithNullModelTest(KhoaHocDAOTest_$$_jvstd96_0.java)
+	at org.powermock.modules.testng.internal.PowerMockTestNGMethodHandler.invoke(PowerMockTestNGMethodHandler.java:50)
+	at testDAO.KhoaHocDAOTest_$$_jvstd96_0.insertWithNullModelTest(KhoaHocDAOTest_$$_jvstd96_0.java)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace156321306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace156321306'><pre>java.lang.NullPointerException
+	at com.polypro.dao.KhoaHocDAO.insert(KhoaHocDAO.java:15)
+	at testDAO.KhoaHocDAOTest.insertWithNullModelTest(KhoaHocDAOTest.java:75)
+	at testDAO.KhoaHocDAOTest_$$_jvstd96_0._d15insertWithNullModelTest(KhoaHocDAOTest_$$_jvstd96_0.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.powermock.modules.testng.internal.PowerMockTestNGMethodHandler.invoke(PowerMockTestNGMethodHandler.java:50)
+	at testDAO.KhoaHocDAOTest_$$_jvstd96_0.insertWithNullModelTest(KhoaHocDAOTest_$$_jvstd96_0.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.insertWithNullModelTest()'><b>insertWithNullModelTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.NguoiHocDAO.insert(NguoiHocDAO.java:16)
+	at testDAO.NguoiHocDAOTest.insertWithNullModelTest(NguoiHocDAOTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793164837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793164837'><pre>java.lang.NullPointerException
+	at com.polypro.dao.NguoiHocDAO.insert(NguoiHocDAO.java:16)
+	at testDAO.NguoiHocDAOTest.insertWithNullModelTest(NguoiHocDAOTest.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NhanVienDAOTest.insertWithNullModelTest()'><b>insertWithNullModelTest</b><br>Test class: testDAO.NhanVienDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.NhanVienDAO.insert(NhanVienDAO.java:15)
+	at testDAO.NhanVienDAOTest.insertWithNullModelTest(NhanVienDAOTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace291728707", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace291728707'><pre>java.lang.NullPointerException
+	at com.polypro.dao.NhanVienDAO.insert(NhanVienDAO.java:15)
+	at testDAO.NhanVienDAOTest.insertWithNullModelTest(NhanVienDAOTest.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.NhanVienDAOTest@5cd61783</td></tr>
+<tr>
+<td title='testDAO.ChuyenDeDAOTest.insertWithValidModelTest()'><b>insertWithValidModelTest</b><br>Test class: testDAO.ChuyenDeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ChuyenDeDAOTest@65ae095c</td></tr>
+<tr>
+<td title='testDAO.HocVienDAOTest.insertWithValidModelTest()'><b>insertWithValidModelTest</b><br>Test class: testDAO.HocVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.HocVienDAOTest@2e140e59</td></tr>
+<tr>
+<td title='testDAO.KhoaHocDAOTest.insertWithValidModelTest()'><b>insertWithValidModelTest</b><br>Test class: testDAO.KhoaHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.insertWithValidModelTest()'><b>insertWithValidModelTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NhanVienDAOTest.insertWithValidModelTest()'><b>insertWithValidModelTest</b><br>Test class: testDAO.NhanVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NhanVienDAOTest@5cd61783</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.isGioiTinhTest()'><b>isGioiTinhTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.isVaiTroTest()'><b>isVaiTroTest</b><br>Test class: testModel.NhanVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.selectByCourseNotFoundTest()'><b>selectByCourseNotFoundTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.selectByCourseTest()'><b>selectByCourseTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.selectByKeywordNotFoundTest()'><b>selectByKeywordNotFoundTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.selectByKeywordTest()'><b>selectByKeywordTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.ChuyenDeDAOTest.selectTest()'><b>selectTest</b><br>Test class: testDAO.ChuyenDeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ChuyenDeDAOTest@65ae095c</td></tr>
+<tr>
+<td title='testDAO.HocVienDAOTest.selectTest()'><b>selectTest</b><br>Test class: testDAO.HocVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.HocVienDAOTest@2e140e59</td></tr>
+<tr>
+<td title='testDAO.KhoaHocDAOTest.selectTest()'><b>selectTest</b><br>Test class: testDAO.KhoaHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.selectTest()'><b>selectTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NhanVienDAOTest.selectTest()'><b>selectTest</b><br>Test class: testDAO.NhanVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NhanVienDAOTest@5cd61783</td></tr>
+<tr>
+<td title='testModel.HocVienTest.setDiemTest()'><b>setDiemTest</b><br>Test class: testModel.HocVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setDienThoaiTest()'><b>setDienThoaiTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setEmailTest()'><b>setEmailTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setGhiChuEmptyTest()'><b>setGhiChuEmptyTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setGhiChuEmptyTest()'><b>setGhiChuEmptyTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setGhiChuTest()'><b>setGhiChuTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setGhiChuTest()'><b>setGhiChuTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setGioiTinhFalseTest()'><b>setGioiTinhFalseTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setGioiTinhTrueTest()'><b>setGioiTinhTrueTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setHinhTest()'><b>setHinhTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setHoTenTest()'><b>setHoTenTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.setHoTenTest()'><b>setHoTenTest</b><br>Test class: testModel.NhanVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setHocPhiTest()'><b>setHocPhiTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setHocPhiTest()'><b>setHocPhiTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setMaCDTest()'><b>setMaCDTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setMaCDTest()'><b>setMaCDTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.HocVienTest.setMaHVTest()'><b>setMaHVTest</b><br>Test class: testModel.HocVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.HocVienTest.setMaKHTest()'><b>setMaKHTest</b><br>Test class: testModel.HocVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setMaKHTest()'><b>setMaKHTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.HocVienTest.setMaNHTest()'><b>setMaNHTest</b><br>Test class: testModel.HocVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.HocVienTest@26e412ef</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setMaNHTest()'><b>setMaNHTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setMaNVTest()'><b>setMaNVTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setMaNVTest()'><b>setMaNVTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.setMaNVTest()'><b>setMaNVTest</b><br>Test class: testModel.NhanVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.setMatKhauTest()'><b>setMatKhauTest</b><br>Test class: testModel.NhanVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setMoTaEmptyTest()'><b>setMoTaEmptyTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setMoTaTest()'><b>setMoTaTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setNgayDKTest()'><b>setNgayDKTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setNgayKGTest()'><b>setNgayKGTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.NguoiHocTest.setNgaySinhTest()'><b>setNgaySinhTest</b><br>Test class: testModel.NguoiHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NguoiHocTest@7103ab0</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setNgayTaoTest()'><b>setNgayTaoTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setTenCDTest()'><b>setTenCDTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.ChuyenDeTest.setThoiLuongTest()'><b>setThoiLuongTest</b><br>Test class: testModel.ChuyenDeTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.ChuyenDeTest@57aa341b</td></tr>
+<tr>
+<td title='testModel.KhoaHocTest.setThoiLuongTest()'><b>setThoiLuongTest</b><br>Test class: testModel.KhoaHocTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.KhoaHocTest@4ae263bf</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.setVaiTroTrueTest()'><b>setVaiTroTrueTest</b><br>Test class: testModel.NhanVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testModel.NhanVienTest.setVaiTrofalseTest()'><b>setVaiTrofalseTest</b><br>Test class: testModel.NhanVienTest</td>
+<td></td>
+<td>0</td>
+<td>testModel.NhanVienTest@19ccca5</td></tr>
+<tr>
+<td title='testDAO.ChuyenDeDAOTest.updateWithNullModelTest()'><b>updateWithNullModelTest</b><br>Test class: testDAO.ChuyenDeDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.ChuyenDeDAO.update(ChuyenDeDAO.java:24)
+	at testDAO.ChuyenDeDAOTest.updateWithNullModelTest(ChuyenDeDAOTest.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace992054388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace992054388'><pre>java.lang.NullPointerException
+	at com.polypro.dao.ChuyenDeDAO.update(ChuyenDeDAO.java:24)
+	at testDAO.ChuyenDeDAOTest.updateWithNullModelTest(ChuyenDeDAOTest.java:128)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.ChuyenDeDAOTest@65ae095c</td></tr>
+<tr>
+<td title='testDAO.HocVienDAOTest.updateWithNullModelTest()'><b>updateWithNullModelTest</b><br>Test class: testDAO.HocVienDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.HocVienDAO.update(HocVienDAO.java:32)
+	at testDAO.HocVienDAOTest.updateWithNullModelTest(HocVienDAOTest.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1166476526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1166476526'><pre>java.lang.NullPointerException
+	at com.polypro.dao.HocVienDAO.update(HocVienDAO.java:32)
+	at testDAO.HocVienDAOTest.updateWithNullModelTest(HocVienDAOTest.java:95)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.HocVienDAOTest@2e140e59</td></tr>
+<tr>
+<td title='testDAO.KhoaHocDAOTest.updateWithNullModelTest()'><b>updateWithNullModelTest</b><br>Test class: testDAO.KhoaHocDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.KhoaHocDAO.update(KhoaHocDAO.java:26)
+	at testDAO.KhoaHocDAOTest.updateWithNullModelTest(KhoaHocDAOTest.java:115)
+	at testDAO.KhoaHocDAOTest_$$_jvstd96_0._d22updateWithNullModelTest(KhoaHocDAOTest_$$_jvstd96_0.java)
+	at org.powermock.modules.testng.internal.PowerMockTestNGMethodHandler.invoke(PowerMockTestNGMethodHandler.java:50)
+	at testDAO.KhoaHocDAOTest_$$_jvstd96_0.updateWithNullModelTest(KhoaHocDAOTest_$$_jvstd96_0.java)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2141341498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2141341498'><pre>java.lang.NullPointerException
+	at com.polypro.dao.KhoaHocDAO.update(KhoaHocDAO.java:26)
+	at testDAO.KhoaHocDAOTest.updateWithNullModelTest(KhoaHocDAOTest.java:115)
+	at testDAO.KhoaHocDAOTest_$$_jvstd96_0._d22updateWithNullModelTest(KhoaHocDAOTest_$$_jvstd96_0.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.powermock.modules.testng.internal.PowerMockTestNGMethodHandler.invoke(PowerMockTestNGMethodHandler.java:50)
+	at testDAO.KhoaHocDAOTest_$$_jvstd96_0.updateWithNullModelTest(KhoaHocDAOTest_$$_jvstd96_0.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.updateWithNullModelTest()'><b>updateWithNullModelTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.NguoiHocDAO.update(NguoiHocDAO.java:29)
+	at testDAO.NguoiHocDAOTest.updateWithNullModelTest(NguoiHocDAOTest.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace967701734", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace967701734'><pre>java.lang.NullPointerException
+	at com.polypro.dao.NguoiHocDAO.update(NguoiHocDAO.java:29)
+	at testDAO.NguoiHocDAOTest.updateWithNullModelTest(NguoiHocDAOTest.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NhanVienDAOTest.updateWithNullModelTest()'><b>updateWithNullModelTest</b><br>Test class: testDAO.NhanVienDAOTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.polypro.dao.NhanVienDAO.update(NhanVienDAO.java:24)
+	at testDAO.NhanVienDAOTest.updateWithNullModelTest(NhanVienDAOTest.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1644929712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1644929712'><pre>java.lang.NullPointerException
+	at com.polypro.dao.NhanVienDAO.update(NhanVienDAO.java:24)
+	at testDAO.NhanVienDAOTest.updateWithNullModelTest(NhanVienDAOTest.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testDAO.NhanVienDAOTest@5cd61783</td></tr>
+<tr>
+<td title='testDAO.ChuyenDeDAOTest.updateWithValidModelTest()'><b>updateWithValidModelTest</b><br>Test class: testDAO.ChuyenDeDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.ChuyenDeDAOTest@65ae095c</td></tr>
+<tr>
+<td title='testDAO.HocVienDAOTest.updateWithValidModelTest()'><b>updateWithValidModelTest</b><br>Test class: testDAO.HocVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.HocVienDAOTest@2e140e59</td></tr>
+<tr>
+<td title='testDAO.KhoaHocDAOTest.updateWithValidModelTest()'><b>updateWithValidModelTest</b><br>Test class: testDAO.KhoaHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.KhoaHocDAOTest_$$_jvstd96_0@4c03a37</td></tr>
+<tr>
+<td title='testDAO.NguoiHocDAOTest.updateWithValidModelTest()'><b>updateWithValidModelTest</b><br>Test class: testDAO.NguoiHocDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NguoiHocDAOTest@49a71302</td></tr>
+<tr>
+<td title='testDAO.NhanVienDAOTest.updateWithValidModelTest()'><b>updateWithValidModelTest</b><br>Test class: testDAO.NhanVienDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDAO.NhanVienDAOTest@5cd61783</td></tr>
+</table><p>
+</body>
+</html>

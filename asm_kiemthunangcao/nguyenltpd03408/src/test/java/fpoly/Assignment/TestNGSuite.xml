@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="suite">
+	<test name="testsuite">
+		<packages>
+			<package name="testDAO"></package>
+			<package name="testModel"></package>
+		</packages>
+	</test>
+</suite>
